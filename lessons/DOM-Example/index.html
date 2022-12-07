@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>testing Out Query Selector</h1>
+
+        <h1 id="header">DOCUMENT OBJECT MODEL (DOM)</h1>
+    </header>
+        <h1>Paragrapgh Title Here</h1>
+        
+        <!-- Lorem50-->
+        <p id="para">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, fugiat qui, dolores aut veniam eum saepe consequatur nostrum error in quam cupiditate a quas autem adipisci repellat aperiam atque id quis. Soluta exercitationem mollitia placeat aperiam quasi et consequatur maxime voluptate tempora reiciendis nulla ab repudiandae, dolore veniam ullam quibusdam.
+        </p>
+
+        <p>Second Paragraph</p>
+
+        <!-- List Items -->
+        <h3>Here are the following errors</h3>
+
+        <ul>
+            <li class="error-list">Error 1</li>
+            <li class="error-list">Error 2</li>
+            <li class="error-list">Error 3</li>
+        </ul>
+
+        <!-- Notes Section -->
+    <table>
+        <tr>
+          <th>Method</th>
+          <th>Node List, HTML Collection, Element</th>
+          <th>Single or Multiple</th>
+          <th>Looping Through It</th>
+        </tr>
+        <tr>
+          <td>getElementByID()</td>
+          <td>Element</td>
+          <td>Single</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>getElementByClassName()</td>
+          <td>HTML Collection</td>
+          <td>Multiple</td>
+          <td>Yes - but we can not use forEach()</td>
+        </tr>
+        <tr>
+          <td>getElementByTagName()</td>
+          <td>HTML Collection</td>
+          <td>Multiple</td>
+          <td>Yes - but we can not use forEach()</td>
+        </tr>
+        <tr>
+          <td>querySelector()</td>
+          <td>Element</td>
+          <td>Single</td>
+          <td>NA</td>
+        </tr>
+        <tr>
+          <td>querySelectorAll()</td>
+          <td>Node List</td>
+          <td>Multiple</td>
+          <td>Yes - even a forEach()</td>
+        </tr>
+      </table>
+
+      <script>console.log("From the HTML PAGE SCRIPT");</script>
+
+      <script src="index.js"></script>
+    
+    </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listeners</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h2>To Do List</h2>
+        <ul class="list">
+            <li class="list-item">Get Milk</li>
+            <li class="list-item">Call Insurance</li>
+            <li class="list-item">Get Good at coding</li>
+            <li class="list-item">Conquer the world</li>
+            <li class="list-item">Buy a Porsche</li>
+        </ul>
+        <div>
+            <input type="text" class="input" placeholder="Enter task">
+            <button class="submit">Add</button>
+            <button class="remove">Remove</button>
+        </div>
+        <div>
+            <h2>Event Bubbling</h2>
+            <div onclick="alert('inner div')">
+                Outer Div
+                <div onclick="alert('inner div')">
+                    Inner Div
+                    <p onclick="alert('paragraph'); event.stopPropagation()">Paragraph</p>
+                </div>
+            </div>
+        </div>
+        <h2>Example of onCLick in HTML</h2>
+        <button class="onClick">Click Me!</button>
+    </div>
+    <script src ="apps.js"></script>
+</body>
+</html>

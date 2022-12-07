@@ -1,0 +1,16 @@
+body {
+    background-color: #bebebe;
+}
+
+.main-container{
+    padding: .25em;
+    border: 2px solid black;
+    border-radius: 0.125em;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.list-item{
+    list-style-type: decimal;
+}
