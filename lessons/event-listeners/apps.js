@@ -15,7 +15,7 @@ console.log(listItem[5])
 //     i.style.color = "red"
 // }
 
-//  ? How to creat an element?
+//  ? How to create an element?
 
 let li = document.createElement("li")
 li.textContent = "Get more project time"
